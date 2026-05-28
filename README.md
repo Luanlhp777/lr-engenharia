@@ -18,6 +18,13 @@ O projeto foi desenvolvido com o objetivo de criar uma presença digital moderna
 
 O site possui arquitetura multipágina e foi desenvolvido utilizando HTML, CSS e JavaScript puro, priorizando performance, organização e manutenção simplificada.
 
+Acesse o Projeto.
+
+Deploy online:
+https://luanlhp777.github.io/lr-engenharia/
+
+
+
 ---
 
 ## Estrutura do Projeto
@@ -132,4 +139,4 @@ Desenvolvido por **Luan Araujo**
 
 ## Status do Projeto
 
-🚧 Projeto em desenvolvimento
+🚧 Projeto em desenvolvimento - Versão inicial publicada para acompanhamento e evolução contínua.
