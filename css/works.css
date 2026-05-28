@@ -1,0 +1,192 @@
+.works-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr 0.85fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.work-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 360px;
+
+    border-radius: calc(var(--radius) + 6px);
+    border: 1px solid var(--line);
+
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.work-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+    transition: transform 400ms ease;
+}
+
+.work-card:hover img {
+    transform: scale(1.04);
+}
+
+.work-card-featured {
+    min-height: 460px;
+}
+
+.work-card-copy {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 1rem;
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    background:
+        linear-gradient(180deg,
+            rgba(8, 19, 32, 0.12),
+            rgba(8, 19, 32, 0.9));
+}
+
+.work-card-copy span {
+    display: block;
+    margin-bottom: 0.45rem;
+
+    color: #d5e5ff;
+
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.work-card-copy h3 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+}
+
+.work-card--building-a img {
+    object-position: center 52%;
+}
+
+.work-card--building-b img {
+    object-position: center 54%;
+}
+
+.work-card--portrait img {
+    object-position: center 18%;
+}
+
+.work-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: 2rem auto 0;
+}
+
+.work-slide {
+    display: none;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 1.2rem;
+    align-items: center;
+
+    padding: 0.8rem;
+    border-radius: 28px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.work-slide.is-active {
+    display: grid;
+}
+
+.work-slide-image {
+    min-height: 260px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.work-slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-slide-copy {
+    padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.work-slide-copy span {
+    display: inline-flex;
+    margin-bottom: 0.8rem;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.work-slide-copy h3 {
+    max-width: 16ch;
+    margin-bottom: 1rem;
+    font-size: clamp(1.6rem, 3vw, 2.8rem);
+    line-height: 1.05;
+}
+
+.work-slide-copy p {
+    max-width: 48ch;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.work-controls {
+    display: flex;
+    gap: 0.8rem;
+
+    margin-top: 1.5rem;
+}
+
+.work-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    color: rgba(255, 255, 255, 0.75);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        background 180ms ease,
+        transform 180ms ease,
+        color 180ms ease;
+
+    cursor: pointer;
+}
+
+.work-arrow:hover {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    transform: translateY(-2px);
+}

@@ -1,0 +1,35 @@
+.about {
+    padding-top: 5.5rem;
+}
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.about-copy {
+    display: grid;
+    gap: 1rem;
+}
+
+.about-copy p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.about-tags span {
+    padding: 0.7rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.03);
+}

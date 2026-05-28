@@ -1,0 +1,57 @@
+.cta-panel {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+    border-radius: 34px;
+
+    border: 1px solid var(--line);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.cta-panel p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.contact-card {
+    justify-self: end;
+
+    width: min(100%, 430px);
+
+    padding: 1.5rem;
+    border-radius: 28px;
+
+    border: 1px solid var(--line);
+
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-card ul {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-card li {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+}
+
+.social-links a {
+    color: var(--accent);
+    font-weight: 700;
+}

@@ -1,0 +1,108 @@
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    color: #06111c;
+    background: var(--accent);
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(16px);
+    background: rgba(6, 17, 28, 0.72);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 84px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.brand img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #fff;
+    padding: 0.35rem;
+}
+
+.brand-copy {
+    display: grid;
+    gap: 0.15rem;
+}
+
+.brand-copy strong {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+}
+
+.brand-copy span {
+    color: var(--muted);
+}
+
+.primary-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.primary-nav a {
+    font-size: 0.97rem;
+    position: relative;
+}
+
+.primary-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    transition: transform 180ms ease;
+}
+
+.primary-nav a:hover::after,
+.primary-nav a:focus-visible::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    display: none;
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 6px auto;
+    background: currentColor;
+}

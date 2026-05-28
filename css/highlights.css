@@ -1,0 +1,41 @@
+.highlights {
+    padding-top: 1rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.highlight-card {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.highlight-card span {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    color: #04111d;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+}
+
+.highlight-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.highlight-card p {
+    margin: 0;
+    line-height: 1.75;
+    color: var(--muted);
+}

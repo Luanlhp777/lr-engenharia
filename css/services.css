@@ -1,0 +1,112 @@
+.section-heading-inline {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.section-note {
+    max-width: 34ch;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    min-height: 250px;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.service-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    margin: 0;
+    line-height: 1.75;
+    color: var(--muted);
+}
+
+.services-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.service-feature-card {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 190px;
+
+    aspect-ratio: 1 / 0.72;
+
+    border-radius: 28px;
+
+    border: 1px solid var(--line);
+
+    background: var(--card);
+
+    box-shadow: var(--shadow);
+}
+
+.service-feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 450ms ease;
+}
+
+.service-feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg,
+            rgba(6, 17, 28, 0.05) 0%,
+            rgba(6, 17, 28, 0.88) 100%);
+}
+
+.service-feature-card:hover img {
+    transform: scale(1.06);
+}
+
+.service-feature-copy {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1;
+}
+
+.service-feature-copy span {
+    display: inline-flex;
+    margin-bottom: 0.55rem;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.service-feature-copy h3 {
+
+    font-size: 0.80rem;
+    line-height: 1.2;
+}

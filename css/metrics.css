@@ -1,0 +1,105 @@
+.metrics {
+    position: relative;
+    z-index: 3;
+
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+
+.metrics-panel {
+    position: relative;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.metrics article {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 1.4rem;
+
+    border-radius: 26px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.03));
+
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    transition:
+        transform 220ms ease,
+        border-color 220ms ease,
+        background 220ms ease;
+}
+
+.metrics article:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(255, 255, 255, 0.18);
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, 0.11),
+            rgba(255, 255, 255, 0.04));
+}
+
+.metric-icon {
+    flex: 0 0 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 16px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.10),
+            rgba(255, 255, 255, 0.03));
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.metric-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.metrics strong {
+    display: block;
+
+    margin-bottom: 0.35rem;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.metrics span {
+    display: block;
+
+    color: #d0deef;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
