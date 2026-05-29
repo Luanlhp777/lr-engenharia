@@ -1,25 +1,44 @@
-.clients-panel {
-    display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
-    align-items: center;
-    gap: 2rem;
-
-    padding: 2rem;
-    border-radius: 34px;
-
-    border: 1px solid var(--line);
-    background: var(--card);
-    box-shadow: var(--shadow);
+.clients-title {
+    margin-bottom: 1.5rem;
 }
 
-.clients-copy p {
-    margin: 0;
-    line-height: 1.8;
-    color: var(--muted);
+.clients-title h2 {
+    font-size: clamp(1.4rem, 2.2vw, 2.2rem);
 }
 
-.client-proof img {
+.clients-marquee {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    border-radius: 24px;
-    background: #fff;
+    height: 70px;
+}
+
+.clients-track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: max-content;
+    height: 70px;
+    animation: clients-marquee 18s linear infinite;
+}
+
+.clients-track img {
+    width: auto;
+    height: 42px;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    filter: none;
+    opacity: 1;
+}
+
+@keyframes clients-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }

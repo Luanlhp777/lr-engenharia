@@ -33,3 +33,51 @@
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.03);
 }
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.leadership-image img {
+    width: 100%;
+    border-radius: 28px;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.leadership-content h2 {
+    margin-bottom: 1rem;
+}
+
+.leadership-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.leadership-content strong {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.leadership-content span {
+    color: var(--muted);
+}
+
+.leadership-signature {
+    margin-top: 1.5rem;
+}
+
+.leadership-signature strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.leadership-signature span {
+    color: var(--muted);
+}
