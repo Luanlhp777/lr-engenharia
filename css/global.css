@@ -55,7 +55,7 @@ button {
 }
 
 .section {
-    padding: 5.5rem 0;
+    padding: 4.5rem 0;
 }
 
 h1,
@@ -117,4 +117,16 @@ h3 {
 .button-secondary {
     border-color: var(--line);
     background: rgba(255, 255, 255, 0.03);
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 0.75rem;
 }
